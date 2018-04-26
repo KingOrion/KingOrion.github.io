@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="C.C">
 <meta property="og:description" content="这是谢天浩第一次发博客hexo的安装依赖git，node输入命令：1$ hexo g 将source/_post目录下的md文件转为public目录下的静态文件所以事实上，对于博客展示有用的只是public目录1$ hexo server 该命令能够临时在4000端口启动服务器，不过稳定性不高，一旦CTRL+C服务器就关机了。可以用nginx对该目录进行代理以获得稳定性(静态文件不就该这么搞嘛)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-26T08:05:13.206Z">
+<meta property="og:updated_time" content="2018-04-26T09:21:12.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一个博客">
 <meta name="twitter:description" content="这是谢天浩第一次发博客hexo的安装依赖git，node输入命令：1$ hexo g 将source/_post目录下的md文件转为public目录下的静态文件所以事实上，对于博客展示有用的只是public目录1$ hexo server 该命令能够临时在4000端口启动服务器，不过稳定性不高，一旦CTRL+C服务器就关机了。可以用nginx对该目录进行代理以获得稳定性(静态文件不就该这么搞嘛)">
@@ -177,6 +177,8 @@
         <p>这是谢天浩第一次发博客<br>hexo的安装依赖git，node<br>输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
 <p>将source/_post目录下的md文件转为public目录下的静态文件<br>所以事实上，对于博客展示有用的只是public目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
 <p>该命令能够临时在4000端口启动服务器，不过稳定性不高，一旦CTRL+C服务器就关机了。<br>可以用nginx对该目录进行代理以获得稳定性(静态文件不就该这么搞嘛)</p>
+<hr>
+<p>hexo的最外层目录要提交到一个git仓库，public目录要提交到githubPages仓库，可以直接通过<a href="https://kingorion.github.io/" target="_blank" rel="noopener">site</a>访问<br>折腾的一笔雕凿<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote add xxx url</span><br><span class="line"><span class="comment">#https://xxxx/xx.git或git@xxx.git</span></span><br><span class="line">git add file1,file2</span><br><span class="line">git commit -m <span class="string">"msg"</span></span><br><span class="line">git push -u xxx master</span><br></pre></td></tr></table></figure></p>
 
       
 
